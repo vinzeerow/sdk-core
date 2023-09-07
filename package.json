@@ -1,7 +1,7 @@
 {
   "name": "@phuphamdeltalabs/sdkcore",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -42,7 +42,6 @@
     "singleQuote": true
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "access": "public"
   }
 }
