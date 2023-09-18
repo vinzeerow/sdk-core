@@ -74,13 +74,13 @@ const CELO_ADDRESSES: ChainAddresses = {
 
 // BNB v3 addresses
 const BNB_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0xdB1d10011AD0Ff90774D0C6Bb92e5C5c8b4461F7',
-  multicallAddress: '0x963Df249eD09c358A4819E39d9Cd5736c3087184',
-  quoterAddress: '0x78D78E420Da98ad378D7799bE8f4AF69033EB077',
-  v3MigratorAddress: '0x32681814957e0C13117ddc0c2aba232b5c9e760f',
-  nonfungiblePositionManagerAddress: '0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613',
-  tickLensAddress: '0xD9270014D396281579760619CCf4c3af0501A47C',
-  swapRouter02Address: '0xB971eF87ede563556b2ED4b1C0b0019111Dd85d2'
+    v3CoreFactoryAddress: '0xdB1d10011AD0Ff90774D0C6Bb92e5C5c8b4461F7',
+    multicallAddress: '0x963Df249eD09c358A4819E39d9Cd5736c3087184',
+    quoterAddress: '0x78D78E420Da98ad378D7799bE8f4AF69033EB077',
+    v3MigratorAddress: '0x32681814957e0C13117ddc0c2aba232b5c9e760f',
+    nonfungiblePositionManagerAddress: '0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613',
+    tickLensAddress: '0xD9270014D396281579760619CCf4c3af0501A47C',
+    swapRouter02Address: '0xB971eF87ede563556b2ED4b1C0b0019111Dd85d2'
 }
 
 // optimism goerli addresses
@@ -145,6 +145,17 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x8357227D4eDc78991Db6FDB9bD6ADE250536dE1d'
 }
 
+// op testnet v3 addresses
+const OP_BNB_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x1a7110abd2ac17048EF551fF216832CF246968BE',
+  multicallAddress: '0x6F83550eA00BC814854348140B84f7Ffe7f4F395',
+  quoterAddress: '0xbC8A8D45C83aD3A40aeee893678D719465BC1F69',
+  v3MigratorAddress: '',
+  nonfungiblePositionManagerAddress: '',
+  tickLensAddress: '0x37F6D9a64647772EBC23171dF37c65f22C666F2C',
+  swapRouter02Address: '0x059bAcd8755bfe4f64d2257F6dAcac014Dd8e9d9'
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -160,7 +171,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.SEPOLIA]: SEPOLIA_ADDRESSES,
   [ChainId.AVALANCHE]: AVALANCHE_ADDRESSES,
   [ChainId.BASE]: BASE_ADDRESSES,
-  [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES
+  [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
+  [ChainId.OP_BNB] : OP_BNB_ADDRESSES
 }
 
 /* V3 Contract Addresses */
