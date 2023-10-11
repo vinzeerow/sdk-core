@@ -17,7 +17,7 @@ export enum ChainId {
   BASE_GOERLI = 84531,
   BASE = 8453,
   OP_BNB = 5611,
-  ONUS_TEST = 1975
+  ONUS_TEST = 1945
 }
 
 export const SUPPORTED_CHAINS = [
@@ -51,5 +51,6 @@ export enum NativeCurrencyName {
   BNB = 'BNB',
   AVAX = 'AVAX',
   BASE = "ETH",
-  OP_BNB = "tBNB"
+  OP_BNB = "tBNB",
+  ONUS_TEST = "WONUS"
 }
