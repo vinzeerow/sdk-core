@@ -151,9 +151,20 @@ const OP_BNB_ADDRESSES: ChainAddresses = {
   multicallAddress: '0x6F83550eA00BC814854348140B84f7Ffe7f4F395',
   quoterAddress: '0xbC8A8D45C83aD3A40aeee893678D719465BC1F69',
   v3MigratorAddress: '',
-  nonfungiblePositionManagerAddress: '',
+  nonfungiblePositionManagerAddress: '0xc83353724f5B20BB996079777E526820eb5e9a16',
   tickLensAddress: '0x37F6D9a64647772EBC23171dF37c65f22C666F2C',
   swapRouter02Address: '0x059bAcd8755bfe4f64d2257F6dAcac014Dd8e9d9'
+}
+
+// onú testnet v3 addresses
+const ONUS_TESTNET_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x766849b29d3d52b83476D7B7963C4Fd0E019A28B',
+  multicallAddress: '0x6794672e512ee4F41d7d24577D1ba673AaF98d5D',
+  quoterAddress: '0x37D9dd4F4BFC6Ca58934cBc6EdAFaFBeab63aD0D',
+  v3MigratorAddress: '',
+  nonfungiblePositionManagerAddress: '0x383EA511A8437a5c40AeAa1bc26C484226783D0a',
+  tickLensAddress: '0x5b13623E3D1554020C48dFA28ff7374A95d61625',
+  swapRouter02Address: '0x169972981f90AAC207588bC9E2cBc666f4516975'
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
@@ -172,7 +183,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.AVALANCHE]: AVALANCHE_ADDRESSES,
   [ChainId.BASE]: BASE_ADDRESSES,
   [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
-  [ChainId.OP_BNB] : OP_BNB_ADDRESSES
+  [ChainId.OP_BNB] : OP_BNB_ADDRESSES,
+  [ChainId.ONUS_TEST] : ONUS_TESTNET_ADDRESSES
 }
 
 /* V3 Contract Addresses */
